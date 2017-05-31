@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - '7'
+dist: trusty
+
+script:
+  - npm install
+  - npm run build
+  - npm test
+  - npm prune --production
+  - docker build -t holmescode/api:latest -t holmescode/api:$TRAVIS_BUILD_NUMBER .
+
+after_success:
+ - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+ - docker push holmescode/api:$TRAVIS_BUILD_NUMBER
+ - docker push holmescode/api:latest

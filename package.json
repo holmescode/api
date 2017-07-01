@@ -24,17 +24,23 @@
     "bunyan": "^1.8.10",
     "hapi": "^16.1.1",
     "hapi-bunyan": "^0.7.0",
+    "highlight.js": "^9.12.0",
     "joi": "^10.4.1",
-    "mongoose": "^4.9.8"
+    "marked": "^0.3.6",
+    "mongoose": "^4.10.4",
+    "speakingurl": "^13.0.0"
   },
   "devDependencies": {
     "@types/boom": "^4.3.1",
     "@types/bunyan": "0.0.36",
     "@types/hapi": "^16.0.6",
+    "@types/highlight.js": "^9.1.9",
     "@types/joi": "^10.3.2",
+    "@types/marked": "0.0.28",
     "@types/mocha": "^2.2.40",
-    "@types/mongoose": "^4.7.11",
+    "@types/mongoose": "^4.7.14",
     "@types/node": "^7.0.18",
+    "@types/speakingurl": "^13.0.1",
     "mocha": "^3.3.0",
     "tslint": "^5.2.0",
     "typescript": "^2.3.2"

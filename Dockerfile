@@ -8,7 +8,7 @@ COPY docker-entrypoint.sh /bin
 WORKDIR /var/service
 
 COPY package.json .
-COPY dist/service/index.js .
+ADD dist/service/ .
 COPY node_modules ./node_modules
 
 ENV NODE_ENV production
